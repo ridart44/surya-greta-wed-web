@@ -1,0 +1,813 @@
+@font-face {
+    font-family: "amsterdam-four";
+    src: url('../fonts/amsterdam-four.ttf');
+}
+
+@font-face {
+    font-family: "GlacialIndifference-Regular";
+    src: url('../fonts/GlacialIndifference-Regular.otf')
+}
+
+/* DESKTOP */
+@media (min-width: 360px) {
+    body {
+        background-color: #f7f1e3;
+    }
+
+    .container.gallery-container {
+        background-color: #fff;
+        color: #35373a;
+        min-height: 100vh;
+        border-radius: 20px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+
+    }
+
+    .gallery-container h1 {
+        text-align: center;
+        margin-top: 70px;
+        font-family: amsterdam-four, sans-serif;
+        font-weight: bold;
+        color: #EAB543;
+    }
+
+    .gallery-container p.page-description {
+        text-align: center;
+        max-width: 800px;
+        margin: 25px auto;
+        color: #888;
+        font-size: 18px;
+    }
+
+    .tz-gallery {
+        padding: 40px;
+    }
+
+    .tz-gallery .lightbox img {
+        width: 100%;
+        margin-bottom: 30px;
+        transition: 0.2s ease-in-out;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .tz-gallery .lightbox img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .tz-gallery img {
+        border-radius: 4px;
+    }
+
+    .baguetteBox-button {
+        background-color: transparent !important;
+    }
+
+    .jumbotron {
+        background-image: url("../img/wedding.jpg");
+        background-size: cover;
+        height: 576px;
+        background-position: center;
+        border-radius: 0px !important;
+        text-align: center;
+
+        div {
+            #pasangan {
+                padding-top: 10px;
+                font-family: amsterdam-four;
+                font-size: 32px;
+                font-style: normal;
+                color: white;
+                position: relative;
+            }
+
+
+            #wedding {
+                font-family: GlacialIndifference-Regular;
+                text-align: center;
+                padding-top: 390px;
+                color: white;
+                font-size: 11px;
+            }
+        }
+    }
+    .ayat {
+        background-color: #f7f1e3;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container {
+            max-width: 800px;
+            width: 100%;
+            height: 25vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .row{
+            align-items: center;
+            justify-content: center;
+        }
+        #ayat{
+            font-size: 12px;
+            font-family: GlacialIndifference-Regular;
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+        #chapter{
+            font-size: 14px;
+            font-family: GlacialIndifference-Regular;
+        }
+        h1{
+            font-family: 'Merienda', cursive;
+            font-size: 20px;
+        }
+
+    }
+    .invitation{
+        background-size: cover;
+        height: 576px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+        background-image: url(../img/bg-3.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .container{
+            max-width: 1200px;
+            width: 85%;
+            height: 500px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(194, 177, 156,0.7);
+            border-radius: 5%;
+        }
+        .row{
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            font-family: amsterdam-four;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        h2{
+            font-family: GlacialIndifference-Regular;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        h3{
+            font-family: 'Great Vibes', cursive;
+            font-weight: 500;
+            font-size: 20px;
+            margin-top: 1px;
+        }
+        p{
+            font-family: GlacialIndifference-Regular;
+            font-size: 12px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+    .card-couple {
+        background-color: #f7f1e3;
+
+        &.container {
+            margin-top: 10%;
+            margin-left: 20px;
+        }
+
+        .card {
+            border-radius: 25px;
+            
+            
+        }
+
+    }
+
+    .inner {
+        overflow: hidden;
+
+        img {
+
+            transition: all 1.5s ease;
+        }
+
+        &:hover img {
+
+            transform: scale(1.2);
+        }
+    }
+
+    .countdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            position: relative;
+            width: 60px;
+            height: 45px;
+            justify-content: center;
+            line-height: normal;
+            text-align: center;
+            background: rgb(140, 156, 79);
+            color: #fff;
+            margin: 40px 7px;
+            font-weight: 300;
+            font-family: GlacialIndifference-Regular;
+            font-size: 35px;
+
+            &#days::before {
+                content: 'Days';
+
+            }
+
+            &#hours::before {
+                content: 'Hours';
+            }
+
+            &#minutes::before {
+                content: 'Minutes';
+            }
+
+            &#seconds::before {
+                content: 'Seconds';
+            }
+        }
+    }
+
+    .distanced {
+        margin-bottom: 63px;
+    }
+
+    .countdown div::before {
+
+        content: '';
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 100%;
+        height: 25px;
+        width: 100%;
+        background: rgb(140, 156, 79);
+        color: #fff;
+        padding-top: 0;
+        font-weight: 300;
+        font-family: GlacialIndifference-Regular;
+        font-size: 11px;
+
+
+    }
+
+    .counter {
+        font-size: 32px;
+        line-height: 60px;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        opacity: 1;
+        color: #333;
+    }
+
+    .counter-title {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    }
+    .tombol-white {
+        text-decoration: none;
+        color: #000;
+        padding: 8px 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 30px;
+        font-size: 12px;
+        font-family: GlacialIndifference-Regular;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .tombol {
+        text-decoration: none;
+        color: #fff;
+        padding: 8px 20px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        font-size: 12px;
+        background-color: rgb(140, 156, 79);
+        font-family: GlacialIndifference-Regular;
+
+    }
+
+    .btn {
+        transition: .7s;
+    }
+
+    .btn:hover {
+        transform-origin: center center;
+        transform: scale(1.2, 1.2)
+    }
+
+    h5 {
+        font-family: amsterdam-four;
+        line-height: 40px;
+        font-style: normal;
+    }
+
+    .card-body {
+
+
+        p {
+            font-family: GlacialIndifference-Regular;
+        }
+    }
+    .section-groom {
+        background-color: #ffffff;
+
+        img {
+            color: #fff;
+            border-radius: 25%;
+            border-style: solid;
+            width: 18rem;
+            height: 18rem;
+        }
+
+        .caption {
+            text-transform: uppercase;
+            font-family: 'Viga', sans-serif;
+            font-size: 24px;
+            color: #000;
+        }
+
+        h1 {
+            font-family: amsterdam-four;
+            color: #EAB543;
+            font-weight: 500;
+
+        }
+
+        h2 {
+
+            font-family: amsterdam-four;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 35px;
+            color: #000;
+        }
+
+        p {
+            color: rgb(114, 111, 111);
+            line-height: 1.7;
+            font-size: 18px;
+            font-family: GlacialIndifference-Regular;
+        }
+
+    }
+
+    .salam {
+        .jumbotron {
+            background-image: url("../img/salam bahagia.jpg");
+            background-size: cover;
+            height: 400px;
+            background-position: center;
+            border-radius: 0px !important;
+            text-align: center;
+
+            div {
+                #salam {
+                    padding-top: 30px;
+                    font-family: amsterdam-four;
+                    font-size: 32px;
+                    font-style: normal;
+                    color: white;
+                    position: relative;
+                }
+
+                #pasangan2 {
+                    font-family: GlacialIndifference-Regular;
+                    text-align: center;
+                    padding-top: 15px;
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    body {
+        background-color: #f7f1e3;
+    }
+
+    .container.gallery-container {
+        background-color: #fff;
+        color: #35373a;
+        min-height: 100vh;
+        border-radius: 20px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    }
+
+    .gallery-container h1 {
+        text-align: center;
+        margin-top: 70px;
+        font-family: amsterdam-four;
+        color: #EAB543;
+        font-weight: 500;
+    }
+
+    .gallery-container p.page-description {
+        text-align: center;
+        max-width: 800px;
+        margin: 25px auto;
+        color: #888;
+        font-size: 18px;
+    }
+
+    .tz-gallery {
+        padding: 40px;
+    }
+
+    .tz-gallery .lightbox img {
+        width: 100%;
+        margin-bottom: 30px;
+        transition: 0.2s ease-in-out;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .tz-gallery .lightbox img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .tz-gallery img {
+        border-radius: 4px;
+    }
+
+    .baguetteBox-button {
+        background-color: transparent !important;
+    }
+
+    .foto {
+        .jumbotron {
+            background-image: url("../img/wedding.jpg");
+            background-size: cover;
+            height: 942px;
+            background-position: center;
+            border-radius: 0px !important;
+            text-align: center;
+
+            div {
+                #pasangan {
+                    padding-top: 40px;
+                    font-family: amsterdam-four;
+                    font-size: 72px;
+                    font-style: normal;
+                    color: white;
+                    position: relative;
+                }
+
+                #wedding {
+                    font-family: GlacialIndifference-Regular;
+                    text-align: center;
+                    padding-top: 630px;
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+
+        }
+    }
+    
+    .ayat {
+        background-color: #f7f1e3;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            height: 50vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .row{
+            align-items: center;
+            justify-content: center;
+            line-height: 50px;
+        }
+        #ayat{
+            font-size: 20px;
+            font-family: GlacialIndifference-Regular;
+        }
+        #chapter{
+            font-size: 23px;
+            font-family: GlacialIndifference-Regular;
+        }
+        h1{
+            font-family: 'Merienda', cursive;
+        }
+
+    }
+    .invitation{
+        background-size: cover;
+        height: 942px;
+        background-position: center;
+        background-image: url(../img/bg-2.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .container{
+            max-width: 1200px;
+            width: 100%;
+            height: 700px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(194, 177, 156,0.7);
+            border-radius: 5%;
+        }
+        .row{
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            font-family: amsterdam-four;
+            font-weight: 500;
+            font-size: 45px;
+            margin-bottom: 35px;
+        }
+        h2{
+            font-family: GlacialIndifference-Regular;
+            font-size: 28px;
+            font-weight: bold;
+            position: relative;
+            
+        }
+        h3{
+            font-family: 'Great Vibes', cursive;
+            font-weight: 500;
+            margin-top: 25px;
+        }
+        p{
+            font-family: GlacialIndifference-Regular;
+            font-size: 23px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+    .card-couple {
+        background-color: #f7f1e3;
+
+        &.container {
+            margin-top: 10%;
+            margin-left: 20px;
+        }
+
+        .card {
+            border-radius: 25px;
+            width: 25rem;
+        }
+
+    }
+
+    .inner {
+        overflow: hidden;
+
+        img {
+
+            transition: all 1.5s ease;
+        }
+
+        &:hover img {
+
+            transform: scale(1.2);
+        }
+    }
+
+    .countdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            position: relative;
+            width: 70px;
+            height: 45px;
+            justify-content: center;
+            line-height: normal;
+            text-align: center;
+            background: rgb(140, 156, 79);
+            color: #fff;
+            margin: 40px 7px;
+            font-weight: 300;
+            font-family: GlacialIndifference-Regular;
+            font-size: 45px;
+
+            &#days::before {
+                content: 'Days';
+
+            }
+
+            &#hours::before {
+                content: 'Hours';
+            }
+
+            &#minutes::before {
+                content: 'Minutes';
+            }
+
+            &#seconds::before {
+                content: 'Seconds';
+            }
+        }
+    }
+
+    .distanced {
+        margin-bottom: 63px;
+    }
+
+    .countdown div::before {
+
+        content: '';
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 100%;
+        height: 25px;
+        width: 100%;
+        background: rgb(140, 156, 79);
+        color: #fff;
+        padding-top: 0;
+        font-weight: 300;
+        font-family: GlacialIndifference-Regular;
+        font-size: 15px;
+
+
+    }
+
+    .counter {
+        font-size: 32px;
+        line-height: 60px;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        opacity: 1;
+        color: #333;
+    }
+
+    .counter-title {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    }
+
+    .tombol {
+        text-decoration: none;
+        color: #fff;
+        padding: 8px 20px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        font-size: 12px;
+        background-color: rgb(140, 156, 79);
+    }
+    .tombol-white {
+        text-decoration: none;
+        color: #000;
+        padding: 8px 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 30px;
+        font-size: 15px;
+        font-family: GlacialIndifference-Regular;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .btn {
+        transition: .7s;
+    }
+
+    .btn:hover {
+        transform-origin: center center;
+        transform: scale(1.2, 1.2)
+    }
+
+    h5 {
+        font-family: amsterdam-four;
+        line-height: 40px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    
+    .card-body {
+        min-height: 368px;
+        max-height: 472px;
+
+        p {
+            font-family: GlacialIndifference-Regular;
+        }
+    }
+
+    .salam {
+        .jumbotron {
+            background-image: url("../img/salam bahagia.jpg");
+            background-size: cover;
+            height: 658px;
+            background-position: center;
+            border-radius: 0px !important;
+            text-align: center;
+
+            div {
+                #salam {
+                    padding-top: 70px;
+                    font-family: amsterdam-four;
+                    font-size: 42px;
+                    font-style: normal;
+                    color: white;
+                    position: relative;
+                }
+
+                #pasangan2 {
+                    font-family: GlacialIndifference-Regular;
+                    text-align: center;
+                    padding-top: 30px;
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+
+        }
+    }
+
+    .section-groom {
+        background-color: #ffffff;
+
+        img {
+            color: #fff;
+            border-radius: 25%;
+            border-style: solid;
+            width: 18rem;
+            height: 18rem;
+        }
+
+        .caption {
+            text-transform: uppercase;
+            font-family: 'Viga', sans-serif;
+            font-size: 24px;
+            color: #000;
+        }
+
+        h1 {
+            font-family: amsterdam-four;
+            color: #EAB543;
+            font-weight: 500;
+
+        }
+
+        h2 {
+
+            font-family: amsterdam-four;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 35px;
+            color: #000;
+        }
+
+        p {
+            color: rgb(114, 111, 111);
+            line-height: 1.7;
+            font-size: 18px;
+            font-family: GlacialIndifference-Regular;
+        }
+
+    }
+
+
+}
